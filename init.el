@@ -39,20 +39,21 @@ values."
      ;; spell-checking
      ;; syntax-checking
      ;; version-control
+     
      ;; +leo
+     c-c++
+     python
+     lua
+     javascript
      osx
      semantic
      search-engine
      yaml
-     javascript
      auto-completion
-     lua
-     python
-     c-c++
      ranger
      (vinegar :variables vinegar-reuse-dired-buffer t)
-     (syntax-checking :variables syntax-checking-enable-by-default nil)
-     (spell-checking :variables spell-checking-enable-by-default nil)
+     syntax-checking
+     spell-checking
      (colors :variables
              colors-enable-nyan-cat-progress-bar t)
      ;; $+leo
@@ -84,7 +85,7 @@ values."
    ;; This variable has no effect if Emacs is launched with the parameter
    ;; `--insecure' which forces the value of this variable to nil.
    ;; (default t)
-   dotspacemacs-elpa-https nil
+   dotspacemacs-elpa-https t
    ;; Maximum allowed time in seconds to contact an ELPA repository.
    dotspacemacs-elpa-timeout 5
    ;; If non nil then spacemacs will check for updates at startup
