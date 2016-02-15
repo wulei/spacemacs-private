@@ -39,13 +39,15 @@ values."
      ;; spell-checking
      ;; syntax-checking
      ;; version-control
-     
+
      ;; +leo
      c-c++
      python
      lua
      javascript
      osx
+     better-defaults
+     gtags
      semantic
      search-engine
      yaml
@@ -56,6 +58,7 @@ values."
      spell-checking
      (colors :variables
              colors-enable-nyan-cat-progress-bar t)
+     leo-core
      ;; $+leo
      )
    ;; List of additional packages that will be installed without being
