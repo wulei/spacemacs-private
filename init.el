@@ -68,10 +68,10 @@ values."
      syntax-checking
      spell-checking
      (colors :variables colors-enable-nyan-cat-progress-bar t)
-     (chinese :variables chinese-default-input-method 'pinyin
-              chinese-enable-youdao-dict t)
+     ;; (chinese :variables chinese-default-input-method 'pinyin
+     ;;          chinese-enable-youdao-dict t)
 
-     leo-core
+     ;; leo-core
      ;; $+leo
      )
    ;; List of additional packages that will be installed without being
