@@ -298,10 +298,10 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place you code here."
   (setq-default omnisharp--curl-executable-path "/usr/local/opt/curl/bin/curl")
   (setq-default omnisharp-server-executable-path "/Users/Leo/Documents/work/leo/omnisharp-server/OmniSharp/bin/Debug/OmniSharp.exe")
-  (define-key evil-insert-state-map (kbd "C-h") 'evil-backward-char)
-  (define-key evil-insert-state-map (kbd "C-j") 'evil-next-line)
-  (define-key evil-insert-state-map (kbd "C-k") 'evil-previous-line)
-  (define-key evil-insert-state-map (kbd "C-l") 'evil-forward-char)
+  (define-key evil-insert-state-map (kbd "C-h") 'left-char)
+  (define-key evil-insert-state-map (kbd "C-j") 'next-line)
+  (define-key evil-insert-state-map (kbd "C-k") 'previous-line)
+  (define-key evil-insert-state-map (kbd "C-l") 'right-char)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
