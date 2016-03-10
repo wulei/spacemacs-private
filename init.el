@@ -42,6 +42,7 @@ values."
 
      ;; +leo
      c-c++
+     ;; (python :variables python-enable-yapf-format-on-save t)
      python
      lua
      javascript
@@ -281,19 +282,26 @@ values."
 
 (defun dotspacemacs/user-init ()
   "Initialization function for user code.
-It is called immediately after `dotspacemacs/init'.  You are free to put almost
-any user code here.  The exception is org related code, which should be placed
-in `dotspacemacs/user-config'."
+It is called immediately after `dotspacemacs/init', before layer configuration
+executes.
+ This function is mostly useful for variables that need to be set
+before packages are loaded. If you are unsure, you should try in setting them in
+`dotspacemacs/user-config' first."
   )
 
 (defun dotspacemacs/user-config ()
   "Configuration function for user code.
 This function is called at the very end of Spacemacs initialization after
-layers configuration. You are free to put any user code."
-
+layers configuration.
+This is the place where most of your configurations should be done. Unless it is
+explicitly specified that a variable should be set before a package is loaded,
+you should place you code here."
   (setq-default omnisharp--curl-executable-path "/usr/local/opt/curl/bin/curl")
   (setq-default omnisharp-server-executable-path "/Users/Leo/Documents/work/leo/omnisharp-server/OmniSharp/bin/Debug/OmniSharp.exe")
-
+  (define-key evil-insert-state-map (kbd "C-h") 'evil-backward-char)
+  (define-key evil-insert-state-map (kbd "C-j") 'evil-next-line)
+  (define-key evil-insert-state-map (kbd "C-k") 'evil-previous-line)
+  (define-key evil-insert-state-map (kbd "C-l") 'evil-forward-char)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
