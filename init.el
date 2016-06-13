@@ -62,8 +62,8 @@ values."
      (git :variables git-magit-status-fullscreen t)
      (vinegar :variables vinegar-reuse-dired-buffer t)
      command-log
-     (syntax-checking :variables syntax-checking-enable-by-default nil)
-     (spell-checking :variables spell-checking-enable-by-default nil)
+     syntax-checking
+     spell-checking
      colors
      leo
      ;; $+leo
