@@ -10,7 +10,3 @@
 (setq tramp-ssh-controlmaster-options
       "-o ControlMaster=auto -o ControlPath='tramp.%%C' -o ControlPersist=no")
 
-;; c-c++
-;; (setq-default dotspacemacs-configuration-layers
-;;               '((c-c++ :variables c-c++-enable-clang-support t)))
-;; (setq-default c-c++-enable-clang-support t)

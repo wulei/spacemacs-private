@@ -8,3 +8,8 @@
 (global-set-key (kbd "C-o") 'evil-jump-backward)
 
 (define-key global-map (kbd "C-c y") 'youdao-dictionary-search)
+
+;; Bind clang-format-buffer to tab on the c++-mode only:
+(add-hook 'c++-mode-hook 'clang-format-bindings)
+(defun clang-format-bindings ()
+  (define-key c++-mode-map [tab] 'clang-format-buffer))
